@@ -55,15 +55,15 @@ for entity in dynamic.iterdir():
   out = output_folder / rel
   out.mkdir(exist_ok=True, parents=True)
   files = []
-  for i,f in enumerate(sorted(entity.glob('*.csv'))):
+  for i,f in enumerate(sorted(entity.glob('*.csv.gz'))):
     if len(files) < 9:
       files.append(f)
     else:
       files.append(f)
-      tasks.append((out/f'part-{i//10:05d}.csv', files.copy()))
+      tasks.append((out/f'part-{i//10:05d}.csv.gz', files.copy()))
       files = []
   if len(files) > 0:
-    tasks.append((out/f'part-{i//10:05d}.csv', files.copy()))
+    tasks.append((out/f'part-{i//10:05d}.csv.gz', files.copy()))
 
 
 print(tasks[:3])
@@ -82,15 +82,15 @@ for entity in dynamic.iterdir():
     out = output_folder / rel
     out.mkdir(exist_ok=True, parents=True)
     files = []
-    for i,f in enumerate(sorted(batch.glob('*.csv'))):
+    for i,f in enumerate(sorted(batch.glob('*.csv.gz'))):
       if len(files) < 9:
         files.append(f)
       else:
         files.append(f)
-        tasks.append((out/f'part-{i//10:05d}.csv', files.copy()))
+        tasks.append((out/f'part-{i//10:05d}.csv.gz', files.copy()))
         files = []
     if len(files) > 0:
-      tasks.append((out/f'part-{i//10:05d}.csv', files.copy()))
+      tasks.append((out/f'part-{i//10:05d}.csv.gz', files.copy()))
 
 
 print(tasks[:3])
