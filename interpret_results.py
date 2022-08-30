@@ -1,0 +1,13 @@
+import pandas as pd
+df = pd.read_csv("timings.csv", sep='|')
+df2 = df[df.day=='2012-11-29'].groupby('q', sort=False).mean()
+print("batch 2012-11-29")
+print(df2)
+print("")
+df3 = df[df.day=='2012-11-30'].groupby('q', sort=False).mean()
+print("batch 2012-11-30")
+print(df3)
+print("")
+df4 = df[df.day=='2012-12-01'].groupby('q', sort=False).mean()
+print("batch 2012-12-01")
+print("")
