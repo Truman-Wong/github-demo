@@ -1,0 +1,27 @@
+use graph testGraph
+CREATE LOADING JOB loadTest FOR GRAPH testGraph {
+
+DEFINE FILENAME f_v;
+DEFINE FILENAME f_e;
+LOAD f_v TO VERTEX vertex_1 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_1 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_2 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_2 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_3 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_3 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_4 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_4 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_5 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_5 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_6 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_6 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_7 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_7 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_8 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_8 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_9 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_9 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_v TO VERTEX vertex_10 VALUES ($0, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+LOAD f_e TO EDGE edge_1_10 VALUES ($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) USING header="true", separator=",";
+}
+RUN LOADING JOB loadTest USING f_v="./data_generator/vertex_1.csv",f_e="./data_generator/edge_1_1.csv"

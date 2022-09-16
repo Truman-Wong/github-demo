@@ -1,0 +1,22 @@
+drop all
+CREATE VERTEX vertex_1(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_2(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_3(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_4(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_5(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_6(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_7(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_8(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_9(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE VERTEX vertex_10(PRIMARY_ID id uint, attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool) WITH primary_id_as_attribute="TRUE"
+CREATE UNDIRECTED EDGE edge_1_1(FROM vertex_1, TO vertex_1 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_2(FROM vertex_1, TO vertex_2 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_3(FROM vertex_1, TO vertex_3 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_4(FROM vertex_1, TO vertex_4 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_5(FROM vertex_1, TO vertex_5 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_6(FROM vertex_1, TO vertex_6 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_7(FROM vertex_1, TO vertex_7 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_8(FROM vertex_1, TO vertex_8 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_9(FROM vertex_1, TO vertex_9 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+CREATE UNDIRECTED EDGE edge_1_10(FROM vertex_1, TO vertex_10 ,attr1 float, attr2 uint, attr3 string compress, attr4 string, attr5 int, attr6 double, attr7 datetime, attr8 bool)
+create graph testGraph(*)

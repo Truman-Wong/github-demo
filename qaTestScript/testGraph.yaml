@@ -1,0 +1,796 @@
+EdgeIds: 
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+EdgeTypes: 
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 0
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_1
+  ToVertexTypeList: 
+  - vertex_1
+  ToVertexTypeName: vertex_1
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 1
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_2
+  ToVertexTypeList: 
+  - vertex_2
+  ToVertexTypeName: vertex_2
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 2
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_3
+  ToVertexTypeList: 
+  - vertex_3
+  ToVertexTypeName: vertex_3
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 3
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_4
+  ToVertexTypeList: 
+  - vertex_4
+  ToVertexTypeName: vertex_4
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 4
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_5
+  ToVertexTypeList: 
+  - vertex_5
+  ToVertexTypeName: vertex_5
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 5
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_6
+  ToVertexTypeList: 
+  - vertex_6
+  ToVertexTypeName: vertex_6
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 6
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_7
+  ToVertexTypeList: 
+  - vertex_7
+  ToVertexTypeName: vertex_7
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 7
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_8
+  ToVertexTypeList: 
+  - vertex_8
+  ToVertexTypeName: vertex_8
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 8
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_9
+  ToVertexTypeList: 
+  - vertex_9
+  ToVertexTypeName: vertex_9
+- Attributes: 
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  EdgeId: 9
+  FromVertexTypeList: 
+  - vertex_1
+  FromVertexTypeName: vertex_1
+  GraphId: 0
+  Name: edge_1_10
+  ToVertexTypeList: 
+  - vertex_10
+  ToVertexTypeName: vertex_10
+GraphCode: DIwM4+c8dQp2XDoXv4wM4+c8dQp2XDoXv/JmorZDcWDBPVj1UauJ1sWeoLXijC1RJ3RAa55Ov2E2M2qfm/Oh3UTPYVbVhD7KEoxqLpbWdpZt+/DwvrVnICFXlk7blw0eMADZz/6uugizLu48Fld82InkO6P6DCvfqqvZxc90qK8Zx7JeN/00sDjYrfH1Nix4aO+npw/l6pf4d32P63XvbETtU80cH3AzuWsrLGrknkt/bJe8+AIh6JqUOAleDq1jhGZBbALeBGZuCMksnpzMK6xEOuIUImSTO0aVmt+F3/BZIcQWk5BQ/tBK8wiCWFM568F22k7KR2IDrIAVjOaSRT5eCeHQQRkJeuejrFzb4w3YFUqmhxn6GcZgpHPLNthoU7206HyZZB0dF5jAxptQefGApxADpkPpPKlDntq54/MoXja8obIP5njUEjFz7yvOoDhDVrPpUcst6N3cDRHYdt7ehgS8jWB+RZAfTTOM7pekIzH7ap7RsDYIF2EZpdOwG8mlyPjE0/KnqQDxGxe/8maitkNxYME=
+GraphConfigVersion: 0
+GraphId: 1
+GraphName: testGraph
+JsonAPIVersion: v2
+SegSizeInBits: 20
+VertexIds: 
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+VertexTypes: 
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_1
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 0
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_2
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 1
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_3
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 2
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_4
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 3
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_5
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 4
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_6
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 5
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_7
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 6
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_8
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 7
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_9
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 8
+  VertexStatisticsType: 2
+- Attributes: 
+  - AttributeName: id
+    AttributeType: UINT
+    DS: NOUPDATE
+    PrimaryIdAsAttribute: true
+  - AttributeName: attr1
+    AttributeType: REAL
+    DS: NOUPDATE
+  - AttributeName: attr2
+    AttributeType: UINT
+    DS: NOUPDATE
+  - AttributeName: attr3
+    AttributeType: UINT
+    DS: NOUPDATE
+    Enumerator: 1
+  - AttributeName: attr4
+    AttributeType: STRING
+    DS: NOUPDATE
+  - AttributeName: attr5
+    AttributeType: INT
+    DS: NOUPDATE
+  - AttributeName: attr6
+    AttributeType: DOUBLE
+    DS: NOUPDATE
+  - AttributeName: attr7
+    AttributeType: INT
+    DS: NOUPDATE
+    DateTime: true
+  - AttributeName: attr8
+    AttributeType: BOOL
+    DS: NOUPDATE
+  GraphId: 0
+  Name: vertex_10
+  PrimaryId: 
+    AttributeName: id
+    AttributeType: UINT
+    PrimaryIdAsAttribute: true
+  Primary_Id_As_Attribute: true
+  VertexId: 9
+  VertexStatisticsType: 2
+graphCreator: tigergraph
+supportVersions: 
+- v2
+tagGraphList: []
+tagList: []
+type: BASE
