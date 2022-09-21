@@ -1,0 +1,35 @@
+#CREATE VERTEX vertex_1(PRIMARY_ID id uint, vertex1_attr1 float, vertex1_attr2 uint, vertex1_attr3 string compress, vertex1_attr4 string, 
+# vertex1_attr5 int, vertex1_attr6 double, vertex1_attr7 datetime, vertex1_attr8 bool) WITH primary_id_as_attribute="TRUE"
+
+#constantString
+CREATE or replace DISTRIBUTED QUERY getAttr_constant_string_dist(string vType) FOR GRAPH testGraph {
+  Start={vType};
+  result= select s from Start:s-(:e)- :t
+          ACCUM s.getAttr("vertex1_attr4","string"),
+                e.getAttr("vertex1_attr4","string"),
+                t.getAttr("vertex1_attr4","string")
+                ;
+}
+
+#globalVariable
+CREATE or replace DISTRIBUTED QUERY variable_string_dist(string vType) FOR GRAPH testGraph{
+  string attrName="vertex1_attr4";
+  string attrName2="vertex1_attr4";
+  Start={vType};
+  result= select s from Start:s-(:e)- :t
+          ACCUM s.getAttr(attrName,"string"),
+                e.getAttr(attrName2,"string"),
+                t.getAttr(attrName,"string")
+                ;
+}
+# parameter
+CREATE or replace DISTRIBUTED QUERY getAttr_parameter_string_dist(string vType,String attrName) FOR GRAPH testGraph{
+  Start={vType};
+  result= select s from Start:s-(:e)- :t
+          ACCUM s.getAttr(attrName,"string"),
+                e.getAttr(attrName,"string"),
+                t.getAttr(attrName,"string")
+                ;
+}
+
+

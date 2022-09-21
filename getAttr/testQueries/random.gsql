@@ -1,0 +1,12 @@
+create or replace query test03() for graph testGraph{
+    ArrayAccum<SetAccum<uint>> @@a[2];
+    string attr="attr10";
+
+    Start = {vertex_1.*};
+    Result = select s from Start:s - (:e) - :t
+             accum @@a[0] += s.getAttr(attr, "uint"),
+                   @@a[1] += t.getAttr(attr, "uint")
+             ;
+    print @@a[0].size();
+    print @@a[1].size();
+}

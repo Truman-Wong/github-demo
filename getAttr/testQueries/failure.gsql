@@ -1,0 +1,11 @@
+create or replace query test01(string attr) for graph testGraph{
+    ArrayAccum<SetAccum<bool>> @@a[3];
+
+    Start = {vertex_1.*};
+    Result = select s from Start:s - (:e) - :t
+             accum @@a[0] += s.getAttr(attr, "bool"),
+                   @@a[1] += t.getAttr(attr, "bool"),
+                   @@a[2] += e.getAttr(attr, "bool")
+             ;
+    print @@a;
+}

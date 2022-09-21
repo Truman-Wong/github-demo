@@ -1,0 +1,21 @@
+create or replace distributed query test_case_when(string attr_name,string attr_type) for graph testGraph{
+    SetAccum<INT> @@a;
+    res = SELECT av
+          FROM vertex_1:av where av.id==549
+          POST-ACCUM CASE attr_type
+                     WHEN "UINT" THEN @@a += av.getAttr(attr_name, "UINT")
+                     WHEN "INT" THEN @@a += av.getAttr(attr_name, "INT")
+                     WHEN "FLOAT" THEN @@a += av.getAttr(attr_name, "FLOAT")
+                     WHEN "DOUBLE" THEN @@a += av.getAttr(attr_name, "DOUBLE")
+                     WHEN "STRING" THEN @@a += str_to_int(av.getAttr(attr_name, "STRING"))
+                     END
+         POST-ACCUM CASE attr_type
+                     WHEN "UINT" THEN av.setAttr(attr_name, 12345678)
+                     WHEN "INT" THEN av.setAttr(attr_name, -12345678)
+                     WHEN "FLOAT" THEN av.setAttr(attr_name, 1.23456)
+                     WHEN "DOUBLE" THEN av.setAttr(attr_name, 345.4011234)
+                     WHEN "STRING" THEN av.setAttr(attr_name, "382")
+                     END
+                     ;
+    print @@a;
+}

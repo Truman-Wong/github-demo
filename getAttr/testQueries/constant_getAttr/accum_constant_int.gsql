@@ -1,0 +1,12 @@
+#CREATE VERTEX vertex_1(PRIMARY_ID id uint, vertex1_attr1 float, vertex1_attr2 uint, vertex1_attr3 string compress, vertex1_attr4 string, 
+# vertex1_attr5 int, vertex1_attr6 double, vertex1_attr7 datetime, vertex1_attr8 bool) WITH primary_id_as_attribute="TRUE"
+
+CREATE or replace QUERY getAttr_constant_int(string vType) FOR GRAPH testGraph {
+  Start={vType};
+  result= select s from Start:s-(:e)- :t
+        #  WHERE s.getAttr("vertex1_attr8","string")
+          ACCUM s.getAttr("vertex1_attr5","int"),
+                e.getAttr("vertex1_attt5","int"),
+                t.getAttr("vertex1_attr5","int")
+                ;
+}
