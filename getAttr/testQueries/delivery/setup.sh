@@ -4,7 +4,7 @@
 time gsql -g testGraph refactor_accum.gsql
 time gsql -g testGraph refactor_where.gsql
 time gsql -g testGraph distributed_refactor_accum.gsql
-time gsql -g testGraph distributed_refactor_accum.gsql
+time gsql -g testGraph distributed_refactor_where.gsql
 
 
 
