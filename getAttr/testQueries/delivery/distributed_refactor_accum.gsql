@@ -14,7 +14,7 @@ CREATE or replace DISTRIBUTED QUERY getAttr_constant_string_dist(string vType) F
 #globalVariable
 CREATE or replace DISTRIBUTED QUERY variable_string_dist(string vType) FOR GRAPH testGraph{
   string attrName="vertex1_attr4";
-  string attrName2="vertex1_attr4";
+  string attrName2="edge_1_attr4";
   Start={vType};
   result= select s from Start:s-(:e)- :t
           ACCUM s.getAttr(attrName,"string"),

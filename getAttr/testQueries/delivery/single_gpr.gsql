@@ -1,5 +1,5 @@
  #!/bin/bash
- queries="getAttr_constant_string getAttr_variable_string getAttr_parameter_int where_constant_bool"
+ queries="getAttr_constant_string variable_string getAttr_parameter_int where_constant_bool"
  for q in $queries
  do 
  time gsql -g testGraph install query -force -single $q
@@ -9,7 +9,7 @@
 t=5
 
 echo single_gpr mode |& tee -a $output_path
-queries="getAttr_constant_string getAttr_variable_string where_constant_bool"
+queries="getAttr_constant_string variable_string where_constant_bool"
  for q in $queries
  do 
  echo "query ${q}" |& tee -a $output_path

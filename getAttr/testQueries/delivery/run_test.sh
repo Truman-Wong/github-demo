@@ -5,7 +5,7 @@
 output_path="./output.csv"
 t=5
  echo "start run_test.sh" |& tee -a $output_path
-queries="getAttr_constant_string getAttr_variable_string where_constant_bool getAttr_constant_string_dist getAttr_variable_string_dist"
+queries="getAttr_constant_string variable_string where_constant_bool getAttr_constant_string_dist variable_string_dist where_constant_bool_dis"
  for q in $queries
  do 
  echo "query ${q}" |& tee -a $output_path
@@ -30,7 +30,7 @@ for p in $para
     for i in $(seq 1 $t)
     do
     q_start=$(date +%s%N | cut -b1-13)
-    (curl -X GET -H "GSQL-TIMEOUT: 500000" "http://127.0.0.1:9000/query/testGraph/${p}?vType=vertex_1&attrName=vertex1_attr4") 
+    (curl -X GET -H "GSQL-TIMEOUT: 500000" "http://127.0.0.1:9000/query/testGraph/${p}?vType=vertex_1&attrName=vertex1_attr4") &> /dev/null
     q_end=$(date +%s%N | cut -b1-13)
     q_time=$(($q_end-$q_start))
     echo -n "$q_time," |& tee -a $output_path
@@ -38,3 +38,4 @@ for p in $para
     echo "" |& tee -a $output_path
 done
 echo "end of run_test.sh" |& tee -a $output_path
+echo "" |& tee -a $output_path
