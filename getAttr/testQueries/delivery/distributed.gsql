@@ -1,8 +1,19 @@
 #CREATE VERTEX vertex_1(PRIMARY_ID id uint, vertex1_attr1 float, vertex1_attr2 uint, vertex1_attr3 string compress, vertex1_attr4 string, 
 # vertex1_attr5 int, vertex1_attr6 double, vertex1_attr7 datetime, vertex1_attr8 bool) WITH primary_id_as_attribute="TRUE"
 
+
+CREATE or replace DISTRIBUTED QUERY attr_dist(string vType) FOR GRAPH testGraph {
+  Start={vType};
+  String tmp;
+  result= select s from Start:s-(:e)- :t
+          ACCUM  tmp = s.vertex1_attr4,
+                 tmp = e.edge_1_attr4,
+                 tmp = t.vertex1_attr4
+                ;
+}
+
 #constantString
-CREATE or replace DISTRIBUTED QUERY getAttr_constant_string_dist(string vType) FOR GRAPH testGraph {
+CREATE or replace DISTRIBUTED QUERY constant_dist(string vType) FOR GRAPH testGraph {
   Start={vType};
   result= select s from Start:s-(:e)- :t
           ACCUM s.getAttr("vertex1_attr4","string"),
@@ -12,7 +23,7 @@ CREATE or replace DISTRIBUTED QUERY getAttr_constant_string_dist(string vType) F
 }
 
 #globalVariable
-CREATE or replace DISTRIBUTED QUERY variable_string_dist(string vType) FOR GRAPH testGraph{
+CREATE or replace DISTRIBUTED QUERY variable_dist(string vType) FOR GRAPH testGraph{
   string attrName="vertex1_attr4";
   string attrName2="edge_1_attr4";
   Start={vType};
@@ -23,13 +34,24 @@ CREATE or replace DISTRIBUTED QUERY variable_string_dist(string vType) FOR GRAPH
                 ;
 }
 # parameter
-CREATE or replace DISTRIBUTED QUERY getAttr_parameter_string_dist(string vType,String attrName) FOR GRAPH testGraph{
+CREATE or replace DISTRIBUTED QUERY parameter_dist(string vType,String attrName) FOR GRAPH testGraph{
   Start={vType};
   result= select s from Start:s-(:e)- :t
           ACCUM s.getAttr(attrName,"string"),
                 e.getAttr(attrName,"string"),
                 t.getAttr(attrName,"string")
                 ;
+}
+
+
+#constantString
+CREATE or replace DISTRIBUTED QUERY where_dist(string vType) {
+  Start={vType};
+  result= select s from vertex_1:s-(:e)- :t
+          WHERE s.getAttr("vertex1_attr4","bool")
+          AND   e.getAttr("vertex1_attr4","bool")
+          or    t.getAttr("vertex1_attr4","bool"); 
+    
 }
 
 

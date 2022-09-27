@@ -1,0 +1,28 @@
+start run_test.sh
+query getAttr_constant_string
+117,63,60,60,61,
+query variable_string
+114,68,63,65,66,
+query where_constant_bool
+2380,2213,2222,2275,2300,
+query getAttr_constant_string_dist
+743,724,758,784,659,
+query variable_string_dist
+741,710,713,687,741,
+query where_constant_bool_dis
+828,795,760,781,789,
+query getAttr_parameter_int
+126,63,65,63,64,
+query getAttr_parameter_string_dist
+742,768,744,685,744,
+end of run_test.sh
+
+single_gpr mode
+query getAttr_constant_string
+522,506,451,531,497,
+query variable_string
+498,544,451,420,409,
+query where_constant_bool
+602,562,494,596,493,
+query parametermode
+373,382,409,379,416,

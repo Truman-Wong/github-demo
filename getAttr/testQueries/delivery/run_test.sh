@@ -5,7 +5,7 @@
 output_path="./output.csv"
 t=5
  echo "start run_test.sh" |& tee -a $output_path
-queries="getAttr_constant_string variable_string where_constant_bool getAttr_constant_string_dist variable_string_dist where_constant_bool_dis"
+queries="attr constant variable where_attr attr_dist constant_dist variable_dist where_dist"
  for q in $queries
  do 
  echo "query ${q}" |& tee -a $output_path
@@ -22,7 +22,7 @@ queries="getAttr_constant_string variable_string where_constant_bool getAttr_con
 done
 
 echo query parameter
-para="getAttr_parameter_int getAttr_parameter_string_dist"
+para="parameter parameter_dist"
 for p in $para
  do 
  echo "query ${p}" |& tee -a $output_path
