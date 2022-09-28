@@ -15,6 +15,7 @@ CREATE or replace DISTRIBUTED QUERY attr_dist(string vType) FOR GRAPH testGraph 
 #constantString
 CREATE or replace DISTRIBUTED QUERY constant_dist(string vType) FOR GRAPH testGraph {
   Start={vType};
+ 
   result= select s from Start:s-(:e)- :t
           ACCUM s.getAttr("vertex1_attr4","string"),
                 e.getAttr("vertex1_attr4","string"),

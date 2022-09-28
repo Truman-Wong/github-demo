@@ -1,0 +1,37 @@
+start run_test.sh
+query attr
+2658,2595,2552,2570,2621,
+query constant
+2040,2476,2196,2467,2230,
+query variable
+2310,2460,2135,2107,2145,
+query where_attr
+2221,2258,2140,2225,2319,
+query attr_dist
+827,733,819,751,753,
+query constant_dist
+721,675,875,683,670,
+query variable_dist
+771,944,726,792,783,
+query where_dist
+769,847,783,726,845,
+query parameter
+2181,2696,2261,2262,2171,
+query parameter_dist
+766,783,865,780,680,
+end of run_test.sh
+
+single_gpr mode
+query attr
+634,533,590,504,561,
+query constant
+560,473,518,453,449,
+query variable
+566,514,678,613,465,
+query where
+11,11,10,9,9,
+query parametermode
+377,416,406,403,423,
+single_gpr mode
+query where_attr
+530,459,527,563,547,

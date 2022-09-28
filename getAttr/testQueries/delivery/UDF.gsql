@@ -32,8 +32,8 @@ CREATE or replace QUERY variable(string vType) FOR GRAPH testGraph{
   Start={vType};
   result= select s from Start:s-(:e)- :t
           ACCUM tmp = s.getAttr(attrName,"string"),
-                e.getAttr(attrName2,"string"),
-                t.getAttr(attrName,"string")
+                tmp = e.getAttr(attrName2,"string"),
+                tmp = t.getAttr(attrName,"string")
                 ;
 }
 # parameter
@@ -42,8 +42,8 @@ CREATE or replace QUERY parameter(string vType,String attrName) FOR GRAPH testGr
   String tmp;
   result= select s from Start:s-(:e)- :t
           ACCUM tmp = s.getAttr(attrName,"string"),
-                e.getAttr(attrName,"string"),
-                t.getAttr(attrName,"string")
+                tmp = e.getAttr(attrName,"string"),
+                tmp = t.getAttr(attrName,"string")
                 ;
 }
 
