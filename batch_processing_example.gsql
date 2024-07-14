@@ -1,0 +1,18 @@
+CREATE DISTRIBUTED QUERY deleted_edges(INT batch_num = 0) FOR GRAPH general { 
+  
+
+  src_1 = SELECT s 
+        FROM Customer|ExternalAccount:s
+        WHERE getvid(s) % 32 == batch_num;
+  src_2 = SELECT s 
+        FROM TransferDoc|TransferTed|TransferPix|TransferBarcode:s
+        WHERE getvid(s) % 32 == batch_num;
+  
+  trans = SELECT s 
+        FROM src_1:s -(TransferFrom>:e)- :t
+  ACCUM DELETE(e);
+  
+  trans = SELECT s 
+        FROM src_2:s -(TransferTo>:e)- :t
+  ACCUM DELETE(e);
+}
